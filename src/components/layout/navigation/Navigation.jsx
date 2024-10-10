@@ -23,9 +23,9 @@ function Navigation() {
         <span className="visually-hidden">Открыть меню</span>
       </button>
       <ul className="navigation__list">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <NavigationItem to={item.to}>{item.name}</NavigationItem>
+            <NavigationItem key={index} to={item.to}>{item.name}</NavigationItem>
           );
         })}
       </ul>

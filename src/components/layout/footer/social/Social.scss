@@ -1,0 +1,63 @@
+@import 'src/assets/styles/variables';
+
+
+.social {
+  margin: 0;
+  padding: 0;
+
+  &--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 24px;
+    max-width: 132px;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px 0 15px;
+    margin: 20px auto;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    @media (max-width: $mobile-width) {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 71%;
+        left: 0;
+        width: 100%;
+        background-color: $darker-white-color;
+        height: 1px;
+      }
+
+      &::after {
+        bottom: 32%;
+      }
+    }
+  }
+}
+
+.social__link {
+  display: block;
+  
+  text-decoration: none;
+  cursor: pointer;
+  
+  svg {
+    fill: $primary-color;
+    width: 22px;
+    height: 28px;
+  }
+
+  &:hover svg {
+    fill: $bg-basic-green;
+  }
+
+  &:active svg {
+    fill: $bg-basic-green;
+    opacity: 0.3;
+  }
+}

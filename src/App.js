@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Form } from 'react-router-dom';
 import Layout from './components/layout/layout/Layout';
 import Home from './components/screens/home/Home';
-import './App.css';
 import Forms from './components/screens/form/Form';
 import Catalog from './components/screens/catalog/Catalog';
 

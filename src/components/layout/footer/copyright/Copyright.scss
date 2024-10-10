@@ -1,0 +1,47 @@
+@import 'src/assets/styles/variables';
+
+.copyright {
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  fill: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    fill: $bg-basic-green;
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-size: 20px;
+  line-height: 125%;
+
+  &:nth-child(1) {
+    color: #f03328;
+  }
+
+  &:nth-child(2) {
+    color: #ff9e0c;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+}
+
+.copyright__image {
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+}
