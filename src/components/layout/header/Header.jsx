@@ -8,14 +8,14 @@ function Header() {
   const location = useLocation();
   const isHome = location.pathname === '/';
   return (
-    <header className ={`header ${isHome && 'header--container'}`}>
+    <header className={`header ${isHome && 'header--container'}`}>
       <div className="container">
         <div className="header__wrapper header__wrapper--indent">
           <Logo />
-          <Navigation />
+          <Navigation isHome={isHome} />
         </div>
       </div>
-      <Hero />
+      {!!isHome && <Hero />}
     </header>
   );
 }

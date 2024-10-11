@@ -1,0 +1,48 @@
+@import 'src/assets/styles/variables';
+
+.catalog {
+  .catalog__title {
+    padding: 27px 0 43px;
+    margin-bottom: 40px;
+
+
+    @media (max-width: $mobile-width) {
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 106%;
+        height: 1px;
+        background-color: $special-grey;
+      }
+
+      &::before {
+        top: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 165px;
+    }
+  }
+}
+
+.catalog__container {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
+    gap: 30px 15px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 76px;
+  }
+}

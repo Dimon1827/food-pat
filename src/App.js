@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Form } from 'react-router-dom';
 import Layout from './components/layout/layout/Layout';
 import Home from './components/screens/home/Home';
 import Forms from './components/screens/form/Form';
-import Catalog from './components/screens/catalog/Catalog';
+import Catalog from './components/screens/goods/Goods';
 
 
 function App() {

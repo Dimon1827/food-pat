@@ -1,0 +1,142 @@
+@import 'src/assets/styles/variables';
+
+.additional-products {
+  position: relative;
+
+  .additional-products__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 200px;
+    background-color: $white-color;
+    display: inline-block;
+    padding-right: 20px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 14px;
+      left: 21px;
+      width: 93%;
+      height: 2px;
+      background-color: $bg-basic-orange;
+      z-index: -2;
+    }
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding: 0 41px 0 40px;
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        top: 21px;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -40px;
+      padding-left: 40px;
+
+      &::before {
+        top: 23px;
+        left: -80px;
+        width: 106%;
+      }
+    }
+  }
+}
+
+
+
+.additional-products__wrapper {
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 45%);
+    gap: 180px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+    gap: 180px 63px;
+  }
+}
+
+.additional-products__list {
+  margin: 0 auto;
+  list-style-type: none;
+  position: absolute;
+  top: -69px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  display: flex;
+  width: 85%;
+  justify-content: center;
+}
+
+.additional-products__number {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color: #3bb77e;
+  margin-bottom: 5px;
+}
+
+.additional-products__item {
+  background-color: $white-color;
+  padding: 9px;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.additional-products__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #7e7e7e;
+}
+
+.additional-products__card {
+  position: relative;
+  width: 85%;
+
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.additional-products__old-price {
+  border: none;
+  text-decoration: line-through;
+}
+
+.additional-products__image {
+  position: absolute;
+  top: -165px;
+  left: -25px;
+  z-index: -1;
+  width: 120%;
+  max-width: 465px;
+}
+

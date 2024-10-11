@@ -1,0 +1,66 @@
+@import 'src/assets/styles/variables';
+
+.map {
+  position: relative;
+
+  &--container {
+    background-color: $gb-basic-grey;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white-color;
+    }
+  }
+}
+
+.map__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.map__contacts {
+  padding: 26px 0;
+
+  &--color {
+    background-color: $gb-basic-grey;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 308px;
+    padding: 61px 40px 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    position: absolute;
+    padding: 61px 80px;
+    gap: 87px;
+    left: 31px;
+    top: 95px;
+    z-index: 11;
+  }
+}
+
+.map__interactive-location {
+  display: block;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 112px;
+  z-index: 10;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    top: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}

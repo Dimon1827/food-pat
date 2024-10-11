@@ -148,7 +148,9 @@
   }
 }
 
-.navigation__item--current {
+.active {
+  display: block;
+
   @media (min-width: $tablet-width) {
     position: relative;
 
@@ -157,22 +159,26 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -8px;
+      bottom: -16px;
       height: 2px;
       background-color: $bg-basic-orange;
     }
   }
-}
-
-.navigation__item--color {
-  &.navigation__item--current {
-    @media (min-width: $desktop-width) {
+  
+  @media (min-width: $desktop-width) {
       &::after {
         background-color: $white-color;
       }
     }
-  }
 }
+
+
+
+
+// .navigation__item--color {
+//   &.navigation__item--current {
+    
+// }
 
 .navigation__link {
   color: $black-color;
@@ -200,6 +206,14 @@
   &--color {
     @media (min-width: $desktop-width) {
       color: $white-color;
+    }
+  }
+
+  &--new-color {
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: $bg-basic-orange;
+      }
     }
   }
 
