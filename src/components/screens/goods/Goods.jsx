@@ -4,7 +4,7 @@ import Catalog from './catalog/Catalog';
 
 function Goods() {
   return (
-    <main class="main-container">
+    <main className="main-container">
       <Catalog/>
       <AdditionalProducts/>
       <Map />

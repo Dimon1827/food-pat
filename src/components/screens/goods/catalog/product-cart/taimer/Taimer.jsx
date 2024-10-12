@@ -1,17 +1,17 @@
 function Taimer({ time }) {
   return (
     <>
-      <li class="additional-products__item">
-        <span class="additional-products__number">{time.days}</span>
-        <p class="additional-products__text">дня</p>
+      <li className="additional-products__item">
+        <span className="additional-products__number">{time.days}</span>
+        <p className="additional-products__text">дня</p>
       </li>
-      <li class="additional-products__item">
-        <span class="additional-products__number">{time.hours}</span>
-        <p class="additional-products__text">часов</p>
+      <li className="additional-products__item">
+        <span className="additional-products__number">{time.hours}</span>
+        <p className="additional-products__text">часов</p>
       </li>
-      <li class="additional-products__item">
-        <span class="additional-products__number">{time.minutes}</span>
-        <p class="additional-products__text">минут</p>
+      <li className="additional-products__item">
+        <span className="additional-products__number">{time.minutes}</span>
+        <p className="additional-products__text">минут</p>
       </li>
     </>
   );

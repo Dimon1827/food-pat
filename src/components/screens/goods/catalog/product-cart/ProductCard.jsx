@@ -1,6 +1,7 @@
-import './ProductCard.scss';
+import { Link } from 'react-router-dom';
 import ProductCardInformation from './ProductCardInformation';
 import TaimerList from './taimer/TaimerList';
+import './ProductCard.scss';
 
 function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
   return (
@@ -9,7 +10,7 @@ function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
         !!oldPrice ? 'additional-products__card' : 'catalog__item'
       }`}
     >
-      <a href="404.html" className="product-card__link">
+      <Link to={name}>
         <picture>
           <source
             type="image/webp"
@@ -27,7 +28,7 @@ function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
             height="240"
           />
         </picture>
-      </a>
+      </Link>
       {!!oldPrice && <TaimerList time={time} />}
       <ProductCardInformation
         name={name}
@@ -40,5 +41,3 @@ function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
 }
 
 export default ProductCard;
-
-// additional-products__list надо с ним что то делать

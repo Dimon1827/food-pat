@@ -9,8 +9,8 @@ function Stages() {
         <h2 className="stages__title title">Преимущества</h2>
         <ul className="stages__list">
           {!!advantages.length &&
-            advantages.map(({ title, text }) => (
-              <StageItem title={title} text={text} />
+            advantages.map(({ title, text }, index) => (
+              <StageItem key={index} title={title} text={text} />
             ))}
         </ul>
       </div>

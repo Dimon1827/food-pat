@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import logo from '../../../../assets/icons/logo.svg';
 
-function Logo() {
+function Logo({className}) {
   const navigate = useNavigate();
   return (
-    <div onClick={() => navigate('/')} className="header__logo logo">
+    <div onClick={() => navigate('/')} className={`logo ${className ? className : ''}`}>
       <picture>
         <source
           type="image/svg+xml"

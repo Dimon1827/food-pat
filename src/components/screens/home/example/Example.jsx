@@ -16,8 +16,8 @@ function Example() {
           </p>
           <div className="example__stats">
             <dl className="example__list">
-              {exampleDetails.map(({ title, number }) => {
-                return <ExampleItem title={title} number={number} />;
+              {exampleDetails.map(({ title, number }, index) => {
+                return <ExampleItem key ={index} title={title} number={number} />;
               })}
             </dl>
             <span className="example__price">

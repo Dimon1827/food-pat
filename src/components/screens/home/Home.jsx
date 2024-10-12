@@ -6,7 +6,7 @@ import Map from './map/Map';
 
 function Home() {
   return (
-    <main class="main-container">
+    <main className="main-container">
       <Service />
       <Stages />
       <Example />

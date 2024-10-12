@@ -1,7 +1,9 @@
 function Form() {
   return (
-    <div>Form</div>
-  )
+    <main className="main-container">
+      
+    </main>
+  );
 }
 
 export default Form

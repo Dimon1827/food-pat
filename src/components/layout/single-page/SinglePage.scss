@@ -1,0 +1,107 @@
+@import 'src/assets/styles/variables';
+
+.single-page {
+  padding: 45px 0;
+
+  &__title {
+    color: $black-color;
+    font-family: $oswald-font;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      
+    }
+  }
+
+  &__text-wrapper {
+    @media (min-width: $tablet-width) {
+      
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+
+  }
+
+  &__inner {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    } 
+  }
+
+  &__price-wrapper {
+    margin-bottom: 20px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    } 
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__price-wrapper {
+
+  }
+
+  &__price {
+    display: block;
+    font-size: 24px
+  }
+
+  &__old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: $special-grey-4;
+  }
+
+  &__button {
+    width: 100%;
+    border-radius: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 40%;
+    } 
+  
+    @media (min-width: $desktop-width) {
+      width: 200px;
+    } 
+  }
+
+  &__image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      margin-bottom: 50px;
+      object-fit: cover;
+    } 
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-bottom: 50px;
+    } 
+  }
+}
+
+
