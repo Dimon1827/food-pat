@@ -1,0 +1,59 @@
+@import 'src/assets/styles/variables';
+
+.text-input {
+  border: 1px solid $special-grey-3;
+  font-family: $oswald-font;
+  color: $primary-color;
+  flex-grow: 1;
+  padding: 12px 32px 13px 14px;
+  font-size: 16px;
+  line-height: 112%;
+  appearance: textfield;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 9px 34px 11px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-right: 36px;
+    padding-left: 18px;
+  }
+
+  &::placeholder {
+    color: $primary-color;
+    font-family: $oswald-font;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+
+  &:hover {
+    border-color: $special-grey-2;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    outline: 1px solid $primary-color;
+  }
+
+  //Применяется при ошибке в поле ввода
+  &--error:focus:invalid {
+    border-color: $error-color;
+    outline: 1px solid $error-color;
+
+    & + .information__icon {
+      fill: $error-color;
+    }
+  }
+}
+
+.text-input::-webkit-outer-spin-button,
+.text-input::-webkit-inner-spin-button {
+  appearance: none;
+}

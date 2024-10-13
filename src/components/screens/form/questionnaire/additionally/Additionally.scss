@@ -1,0 +1,129 @@
+@import 'src/assets/styles/variables';
+
+.additionally {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.additionally__wrapper {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 60px;
+    align-items: center;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 40px 80px;
+    align-items: start;
+    margin-bottom: 67px;
+  }
+}
+
+.additionally__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    .additionally__label::before {
+      border-color: $special-grey-5;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.additionally__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.additionally__label {
+  padding-left: 45px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $white-color;
+    border: 1px solid $special-grey-2;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -9px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 16px;
+    top: -2%;
+    left: 10px;
+    border: solid $bg-basic-orange;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+
+    @media (min-width: $tablet-width) {
+      width: 15px;
+      height: 22px;
+      top: -19%;
+      left: 12px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 60px;
+  }
+}
+
+.additionally__input:checked ~ .additionally__label::after {
+  display: block;
+}
+
+.additionally__input:focus ~ .additionally__label::before {
+  border-color: $special-grey-5;
+}
+
+.additionally__input:disabled ~ .additionally__label {
+  cursor: default;
+  opacity: 0.3;
+}

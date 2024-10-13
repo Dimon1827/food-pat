@@ -1,0 +1,111 @@
+@import 'src/assets/styles/variables';
+
+.questionnaire__description {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+  max-width: 226px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
+}
+
+.questionnaire__wrapper {
+  .questionnaire__title {
+    margin-bottom: 37px;
+    position: relative;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 29px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 106%;
+        height: 1px;
+        background-color: $special-grey;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+.questionnaire__form-wrapper {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin-bottom: 69px;
+  }
+}
+
+.questionnaire__field {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.questionnaire__button {
+  margin-bottom: 21px;
+  margin-top: 14px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 55px 64px 0;
+    font-size: 20px;
+    line-height: 26px;
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 75px;
+  }
+}
+
+.questionnaire__text {
+  color: $black-color;
+  text-align: center;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    display: inline-block;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
+}
