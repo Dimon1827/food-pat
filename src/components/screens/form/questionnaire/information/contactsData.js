@@ -10,7 +10,8 @@ const contactsData = [
       type: 'email',
       className: 'text-input--error',
       placeholder: 'a.drogalov2015@yandex.ru',
-      required: true,
+      regex: /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i,
+      required: 'Введи email',
     },
   },
   {
@@ -24,7 +25,7 @@ const contactsData = [
       type: 'tel',
       className: 'text-input--error',
       placeholder: '8 (909) 512-34-21',
-      required: true,
+      required: 'Введи телефон',
     },
   },
 ];

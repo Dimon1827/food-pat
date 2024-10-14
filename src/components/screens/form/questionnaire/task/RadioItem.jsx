@@ -1,11 +1,11 @@
 import SelectInput from '../../../../ui/selectInput/SelectInput';
 
-function AdditionallyItem({ control, id, name, type }) {
+function RadioItem({ control, id, name, type }) {
   return (
-    <li className="additionally__item">
+    <li className="task__item">
       <SelectInput control={control} id={id} type={type} name={name} />
     </li>
   );
 }
 
-export default AdditionallyItem;
+export default RadioItem;

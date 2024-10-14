@@ -10,7 +10,7 @@ const fieldCatInformation = [
       type: 'text',
       className: 'text-input--error',
       placeholder: 'Елена',
-      required: true,
+      required: 'Введи имя',
     },
   },
   {
@@ -26,7 +26,7 @@ const fieldCatInformation = [
       max: 100,
       className: 'text-input--error',
       placeholder: '70',
-      required: true,
+      required: 'Введи вес',
     },
   },
   {

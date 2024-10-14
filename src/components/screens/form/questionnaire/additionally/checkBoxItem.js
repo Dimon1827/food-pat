@@ -1,19 +1,22 @@
 const checkBoxItems = [
   {
     id: 'milk',
+    type: 'checkbox',
     name: 'Молоко',
-    checked: 'checked',
   },
   {
     id: 'fish',
+    type: 'checkbox',
     name: 'Рыба',
   },
   {
     id: 'nuts',
+    type: 'checkbox',
     name: 'Орехи',
   },
   {
     id: 'egg',
+    type: 'checkbox',
     name: 'Яйца',
   },
 ];
