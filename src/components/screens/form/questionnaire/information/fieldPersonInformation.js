@@ -1,4 +1,4 @@
-const fieldCatInformation = [
+const fieldPersonInformation = [
   {
     label: {
       htmlFor: 'name',
@@ -10,7 +10,9 @@ const fieldCatInformation = [
       type: 'text',
       className: 'text-input--error',
       placeholder: 'Елена',
-      required: 'Введи имя',
+      regex: /^[а-яёa-z]{2,24}/i,
+      message: 'Ваше имя введено неверно',
+      required: 'Введите имя',
     },
   },
   {
@@ -23,10 +25,11 @@ const fieldCatInformation = [
       name: 'weight',
       type: 'number',
       min: 0,
-      max: 100,
+      max: 200,
+      numberMessage: 'Ваше число должно быть от 0 до 200',
       className: 'text-input--error',
       placeholder: '70',
-      required: 'Введи вес',
+      required: 'Введите вес',
     },
   },
   {
@@ -40,10 +43,11 @@ const fieldCatInformation = [
       type: 'number',
       min: 0,
       max: 100,
+      numberMessage: 'Ваше число должно быть от 0 до 100',
       placeholder: '35',
       required: false,
     },
   },
 ];
 
-export default fieldCatInformation;
+export default fieldPersonInformation;

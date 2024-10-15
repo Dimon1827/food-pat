@@ -5,6 +5,18 @@
   flex-wrap: wrap;
   padding-bottom: 24px;
 
+  .information__title {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 69px;
   }
@@ -55,18 +67,6 @@
 
 .input:focus + .information__icon {
   fill: $bg-basic-green;
-}
-
-.information__title {
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-  }
 }
 
 .information__icon {

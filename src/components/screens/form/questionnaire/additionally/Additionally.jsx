@@ -2,8 +2,7 @@ import './Additionally.scss';
 import AdditionallyItem from './AdditionallyItem';
 import checkBoxItems from './checkBoxItem';
 
-function Additionally({ control }) {
-
+function Additionally() {
   return (
     <div className="container">
       <div className="questionnaire__field additionally">
@@ -11,12 +10,7 @@ function Additionally({ control }) {
         <ul className="additionally__wrapper">
           {checkBoxItems.length > 0 &&
             checkBoxItems.map((item) => (
-              <AdditionallyItem
-                key={item.id}
-                control={control}
-                type={item.type}
-                {...item}
-              />
+              <AdditionallyItem key={item.id} type={item.type} {...item} />
             ))}
         </ul>
         <button type="submit" className="questionnaire__button button">

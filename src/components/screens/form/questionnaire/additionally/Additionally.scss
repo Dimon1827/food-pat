@@ -1,6 +1,15 @@
 @import 'src/assets/styles/variables';
 
 .additionally {
+
+  .additionally__title {
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 66px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 20px;
   }
@@ -48,14 +57,6 @@
     &:not(:last-child) {
       margin-bottom: 0;
     }
-  }
-}
-
-.additionally__title {
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
   }
 }
 

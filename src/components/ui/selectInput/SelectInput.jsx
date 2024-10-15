@@ -1,6 +1,7 @@
-import { Controller } from 'react-hook-form';
+import { Controller, useFormContext } from 'react-hook-form';
 
-function SelectInput({ control, id, name, type }) {
+function SelectInput({ id, name, type }) {
+  const { control } = useFormContext();
   return (
     <>
       <Controller

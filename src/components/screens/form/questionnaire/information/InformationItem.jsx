@@ -1,9 +1,13 @@
 import { BsTelephoneForward } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import Input from '../../../../ui/input/Input';
+import { useFormContext } from 'react-hook-form';
 
-function InformationItem(props) {
-  const { input, label, register, errors } = props;
+function InformationItem({ input, label }) {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
   return (
     <>
       <div className="information__inner">
@@ -20,6 +24,8 @@ function InformationItem(props) {
           max={input.max}
           regex={input.regex}
           required={input.required}
+          message={input.message}
+          numberMessage = {input.numberMessage}
         />
         {input.type === 'email' && (
           <AiOutlineMail className="information__icon" />

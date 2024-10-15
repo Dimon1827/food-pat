@@ -8,6 +8,8 @@ function Input({
   name,
   min,
   max,
+  message,
+  numberMessage,
   ...props
 }) {
   return (
@@ -17,11 +19,17 @@ function Input({
         required,
         pattern: {
           value: regex,
-          message: `Пожалуйста введите правильно ${name}`,
+          message: `${!!message ? message : `Ваш ${name} введен неправильно`} `,
+        },
+        min: {
+          value: min,
+          message: `${!!numberMessage ? numberMessage : ''}`,
+        },
+        max: {
+          value: max,
+          message: `${!!numberMessage ? numberMessage : ''}`,
         },
       })}
-      {...(min !== null ? { min } : {})}
-      {...(max !== null ? { max } : {})}
       {...props}
     />
   );

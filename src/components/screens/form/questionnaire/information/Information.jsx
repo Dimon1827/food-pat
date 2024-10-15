@@ -1,17 +1,12 @@
 import InformationItem from './InformationItem';
 import './Information.scss';
 
-function Information({
-  fieldCatInformation = null,
-  contactsData = null,
-  register,
-  errors
-}) {
-  const foundInformation = fieldCatInformation || contactsData;
+function Information({ fieldPersonInformation = null, contactsData = null }) {
+  const foundInformation = fieldPersonInformation || contactsData;
   return (
     <>
       {foundInformation.map((field, index) => {
-        return <InformationItem register={register} errors = {errors} key={index} {...field} />;
+        return <InformationItem key={index} {...field} />;
       })}
     </>
   );
