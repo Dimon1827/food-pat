@@ -3,7 +3,7 @@ import ProductCardInformation from './ProductCardInformation';
 import TaimerList from './taimer/TaimerList';
 import './ProductCard.scss';
 
-function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
+function ProductCard({ name, ingredients, image, price, oldPrice, time, id }) {
   return (
     <div
       className={`product-card ${
@@ -35,6 +35,8 @@ function ProductCard({ name, ingredients, image, price, oldPrice, time }) {
         ingredients={ingredients}
         price={price}
         oldPrice={oldPrice}
+        id={id}
+        image = {image}
       />
     </div>
   );

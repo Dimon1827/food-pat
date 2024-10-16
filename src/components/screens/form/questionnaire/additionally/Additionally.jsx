@@ -1,6 +1,6 @@
-import './Additionally.scss';
 import AdditionallyItem from './AdditionallyItem';
 import checkBoxItems from './checkBoxItem';
+import './Additionally.scss';
 
 function Additionally() {
   return (

@@ -1,16 +1,20 @@
 const items = [
   {
     name: 'Главная',
-    to: '/'
+    to: '/',
   },
   {
     name: 'Каталог продукции',
-    to: '/catalog'
+    to: '/catalog',
   },
   {
     name: 'Подбор программы',
-    to: '/form'
-  }
-]
+    to: '/form',
+  },
+  {
+    name: 'Корзина',
+    to: '/basket',
+  },
+];
 
 export default items;
