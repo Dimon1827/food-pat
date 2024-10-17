@@ -13,7 +13,7 @@ function ProductCardInformation({
   const dispatch = useDispatch();
 
   const handlerAddProductClick = () => {
-    const product = { id, name, price, image };
+    const product = { id, name, price, image, isChecked: false };
     dispatch(addProduct(product));
   };
   return (

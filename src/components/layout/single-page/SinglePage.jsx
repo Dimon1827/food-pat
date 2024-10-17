@@ -1,16 +1,24 @@
 import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../../redux/slice/productsSlice';
 import productsData from '../../screens/goods/catalog/productsData';
 import goodsWithDiscount from '../../screens/goods/additional-products/goodsWithDiscount';
-
 import './SinglePage.scss';
 function SinglePage() {
   const { stringName } = useParams();
+  const dispatch = useDispatch();
   const product = productsData.find((prod) => stringName === prod.name);
   const productWithDiscount = goodsWithDiscount.find(
     (prod) => stringName === prod.name
   );
-  const { name, ingredients, price, oldPrice, image, description } =
+  const { id, name, ingredients, price, oldPrice, image, description } =
     product || productWithDiscount;
+
+  const handleAddProductClick = () => {
+    const product = { id, name, price, image, isChecked: false };
+    dispatch(addProduct(product));
+  };
+
   return (
     <main className="main-container">
       <section className="single-page">
@@ -46,7 +54,10 @@ function SinglePage() {
                 )}
                 <span className="single-page__price">{price} ₽</span>
               </div>
-              <button className="single-page__button button">
+              <button
+                className="single-page__button button"
+                onClick={handleAddProductClick}
+              >
                 Добавить в корзину
               </button>
             </div>

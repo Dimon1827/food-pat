@@ -1,6 +1,6 @@
 import './Button.scss'
 
-function Button({ children, className, ...props }) {
+function Button({ children, className = '', ...props }) {
   return <button className={`button ${className}`} {...props}>{children}</button>;
 }
 

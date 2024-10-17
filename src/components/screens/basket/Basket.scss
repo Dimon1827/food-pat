@@ -3,6 +3,7 @@
 .basket {
   .basket__title {
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -10,7 +11,8 @@
   border-radius: 24px;
   background-color: #e5e2e140;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 20px 10px;
 
   @media (min-width: $tablet-width) {
@@ -22,24 +24,47 @@
   }
 }
 
+.basket__wrapper-button {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 768px;
+  }
+}
+
+.basket__button {
+  border-radius: 20px;
+  width: 100%;
+  padding: 12px 10px;
+}
+
 .basket__item {
   width: 100%;
   display: flex;
-  padding-bottom: 26px;
+  position: relative;
   justify-content: space-evenly;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $bg-basic-orange;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 25px;
 
-  @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $bg-basic-orange;
+    }
   }
 }
 
 .basket__wrapper {
-  margin-left: 48px;
   position: relative;
   text-align: center;
 
@@ -53,8 +78,9 @@
 }
 
 .basket__image {
-  width: 85px;
-  height: 92px;
+  width: 32%;
+  object-fit: cover;
+  height: 93px;
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
@@ -107,4 +133,59 @@
   }
 }
 
+.basket__toggle {
+  position: absolute;
+  top: 37px;
+  left: -5px;
+  display:inline-block;
+  width: 25px;
+  height: 19px;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 1rem;
+    height: 1.2rem;
+    background: transparent;
+    border: 2px solid $bg-basic-orange; 
+  }
+  &:after {
+    z-index: 0;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 76px;
+    left: 28px;
+
+    &:before,
+    &:after {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 13px;
+  }
+}
+
+.basket__checked {
+  &:before {
+    animation: pop .3s ease;
+    z-index: 100;
+    background: $bg-basic-orange;
+  } 
+}
+
+@keyframes pop {
+  0% { opacity:0; }
+  75% {opacity:1; }
+  100% { transform: scale(1.2); }
+}
 
