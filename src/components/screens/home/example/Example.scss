@@ -221,7 +221,7 @@
   border: 2px solid $special-grey-4;
   top: 42%;
   right: 87%;
-  --x: 125px;
+  // --x: 125px;
   transform: translateX(var(--x));
 
   &::before,
@@ -271,7 +271,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    --x: 275px;
+    // --x: 275px;
     right: 84%;
     top: 46%;
 
@@ -290,7 +290,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    --x: 278px;
+    // --x: 278px;
     right: 93%;
   }
 }

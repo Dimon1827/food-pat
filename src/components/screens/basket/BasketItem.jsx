@@ -6,6 +6,7 @@ import {
   incrementQuantity,
   decrementQuantity,
 } from '../../../redux/slice/productsSlice';
+import { useState } from 'react';
 
 function BasketItem({ image, name, price, id, isChecked, quantity, oldPrice }) {
   console.log(oldPrice);
@@ -26,7 +27,6 @@ function BasketItem({ image, name, price, id, isChecked, quantity, oldPrice }) {
   const handleDecrementCountClick = () => {
     dispatch(decrementQuantity(id));
   };
-
   return (
     <li className="basket__item">
       <div

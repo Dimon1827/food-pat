@@ -1,12 +1,39 @@
-import './Slider.scss'
+import { useState } from 'react';
+import './Slider.scss';
 
 function Slider() {
+  const [sliderPosition, setSliderPosition] = useState(42);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleMove = (event) => {
+    if (!isDragging) return;
+
+    const rect = event.currentTarget.getBoundingClientRect();
+
+    const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
+    console.log('x' + x)
+    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
+
+    setSliderPosition(percent);
+  };
+
+  const handleMouseDown = () => {
+    setIsDragging(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
   return (
-    <div className="slider">
-      <div className="example__slider-images slider__images">
+    <div className="slider" onMouseUp={handleMouseUp}>
+      <div
+        className="example__slider-images slider__images"
+        onMouseMove={handleMove}
+        onMouseDown={handleMouseDown}
+      >
         <div
           className="slider__image-wrapper slider__image-wrapper--before"
-          style={{ width: '50%' }}
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <picture>
             <source
@@ -48,13 +75,22 @@ function Slider() {
               alt="Женщина до"
               className="example__image"
               width="312"
+              draggable={false}
               height="480"
             />
           </picture>
         </div>
-        <button type="button" className="example__button">
+        <button
+          type="button"
+          className="example__button"
+          style={{
+            left: `calc(${sliderPosition}% - 12px)`,
+          }}
+        >
           <span className="example__button-toogle"></span>
-          <span className="visually-hidden">Кнопка для изменения пропорций</span>
+          <span className="visually-hidden">
+            Кнопка для изменения пропорций
+          </span>
         </button>
         <div className="slider__image-wrapper slider__image-wrapper--after">
           <picture>
@@ -95,6 +131,7 @@ function Slider() {
             <img
               src="./woman-after-mobile.png"
               alt="Женщина до"
+              draggable={false}
               className="example__image"
               width="312"
               height="480"
