@@ -3,16 +3,28 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import {
   deleteProduct,
   toggleProduct,
+  incrementQuantity,
+  decrementQuantity,
 } from '../../../redux/slice/productsSlice';
 
-function BasketItem({ image, name, price, id, isChecked }) {
+function BasketItem({ image, name, price, id, isChecked, quantity, oldPrice }) {
+  console.log(oldPrice);
   const dispatch = useDispatch();
 
   const handleDeleteProductClick = () => {
     dispatch(deleteProduct(id));
   };
+
   const handleCheckedClick = () => {
     dispatch(toggleProduct(id));
+  };
+
+  const handleIncrementCountClick = () => {
+    dispatch(incrementQuantity(id));
+  };
+
+  const handleDecrementCountClick = () => {
+    dispatch(decrementQuantity(id));
   };
 
   return (
@@ -21,7 +33,11 @@ function BasketItem({ image, name, price, id, isChecked }) {
         className={`basket__toggle ${isChecked ? 'basket__checked' : ''}`}
         onClick={handleCheckedClick}
       ></div>
-      <img className="basket__image" src={`${image}.jpg`} alt={name} />
+      <img
+        className="basket__image"
+        src={`${image}.${!!oldPrice ? 'png' : 'jpg'}`}
+        alt={name}
+      />
       <div className="basket__wrapper">
         <h2 className="basket__subtitle">{name}</h2>
         <span className="basket__price">{price} ₽</span>
@@ -29,6 +45,26 @@ function BasketItem({ image, name, price, id, isChecked }) {
           className="basket__dustbin"
           onClick={handleDeleteProductClick}
         />
+        <div className="basket__quantity-wrapper">
+          <button
+            className="basket__decrement"
+            onClick={handleDecrementCountClick}
+          >
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <div className="basket__quantity">{quantity}</div>
+          <button
+            className="basket__increment"
+            onClick={handleIncrementCountClick}
+          >
+            <svg viewBox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
       </div>
     </li>
   );

@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addProduct } from '../../../../../redux/slice/productsSlice';
+import productWithQuantity from '../../../../../utils/productWithQuantity';
 
 function ProductCardInformation({
   name,
@@ -12,9 +13,9 @@ function ProductCardInformation({
 }) {
   const dispatch = useDispatch();
 
-  const handlerAddProductClick = () => {
-    const product = { id, name, price, image, isChecked: false };
-    dispatch(addProduct(product));
+  const handleAddProductClick = () => {
+    const product = { id, name, price, image, oldPrice };
+    dispatch(addProduct(productWithQuantity(product)));
   };
   return (
     <div className="product-card__wrapper">
@@ -24,7 +25,7 @@ function ProductCardInformation({
         </Link>
         <button
           className="product-card__button button"
-          onClick={handlerAddProductClick}
+          onClick={handleAddProductClick}
         >
           Купить
         </button>

@@ -7,17 +7,20 @@
   }
 }
 
+.basket__main-wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 .basket__list {
   border-radius: 24px;
   background-color: #e5e2e140;
   list-style-type: none;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 20px 10px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
@@ -33,7 +36,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    max-width: 768px;
   }
 }
 
@@ -41,6 +43,13 @@
   border-radius: 20px;
   width: 100%;
   padding: 12px 10px;
+}
+
+.basket__total {
+  display: block;
+  font-size: 24px;
+  font-family: $oswald-font;
+  margin-bottom: 40px;
 }
 
 .basket__item {
@@ -72,7 +81,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    align-items: flex-start;
+    width: 340px;
   }
   
 }
@@ -89,15 +99,22 @@
   }
 }
 
+.basket__quantity-wrapper {
+  display: flex;
+}
+
 .basket__subtitle {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   width: 127px;
 }
 
 .basket__price {
   display: block;
   font-size: 20px;
+  text-align: center;
+  width: 80px;
+  margin-bottom: 15px;
 }
 
 .basket__dustbin {
@@ -105,20 +122,20 @@
   height: 25px;
   position: absolute;
   cursor: pointer;
-  bottom: 5px;
-  right: 4px;
+  bottom: 49px;
+  right: 21px;
 
   &:hover {
     fill: $bg-basic-orange;
   }
 
   @media (min-width: $tablet-width) {
-    bottom: 98px;
-    right: -7px;
+    bottom: 109px;
+    right: 25px;
   }   
   @media (min-width: $desktop-width) {
     top: 25px;
-    right: 43px;
+    right: 144px;
   }   
 }
 
@@ -188,4 +205,44 @@
   75% {opacity:1; }
   100% { transform: scale(1.2); }
 }
+   
+.basket__quantity-wrapper {
+    display: inline-flex;
+    border-radius: 26px;
+    border: 4px solid $bg-basic-orange;
+}
 
+.basket__decrement,
+.basket__increment,
+.basket__quantity {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.basket__quantity {
+  width: 25px;
+  text-align: center;
+  font-size: 22px;
+  line-height: normal;
+  font-weight: bold;
+  color: $black-color;
+  font-family: "Courier New",monospace
+}
+
+.basket__decrement svg,
+.basket__increment svg {
+  stroke: $bg-basic-orange;
+  stroke-width: 4;
+  transition: 0.5s;
+  margin: 10px;
+
+  &:hover {
+    stroke: $black-color;
+  }
+}

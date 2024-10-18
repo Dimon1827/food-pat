@@ -42,6 +42,16 @@ const productsSlice = createSlice({
         totalQuantity: 0,
       };
     },
+    incrementQuantity: (state, action) => {
+      const product = state.products.find((item) => item.id === action.payload);
+      product.quantity++;
+    },
+    decrementQuantity: (state, action) => {
+      const product = state.products.find((item) => item.id === action.payload);
+      if (product.quantity > 1) {
+        product.quantity--;
+      }
+    },
     calculateAll: (state) => {
       const { total, quantity } = state.products.reduce(
         (productsTotal, product) => {
@@ -67,6 +77,8 @@ export const {
   clearAll,
   toggleProduct,
   deleteSelectedProducts,
+  incrementQuantity,
+  decrementQuantity,
   calculateAll,
 } = productsSlice.actions;
 

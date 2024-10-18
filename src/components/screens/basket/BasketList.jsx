@@ -2,13 +2,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   clearAll,
   selectProducts,
+  selectTotalPrice,
   deleteSelectedProducts,
+  calculateAll,
 } from '../../../redux/slice/productsSlice';
 import BasketItem from './BasketItem';
 import Button from '../../ui/button/Button';
+import { useEffect } from 'react';
 
 function BasketList() {
   const products = useSelector(selectProducts);
+  const total = useSelector(selectTotalPrice);
   const dispatch = useDispatch();
 
   const handleClearAllClick = () => {
@@ -19,8 +23,12 @@ function BasketList() {
     dispatch(deleteSelectedProducts());
   };
 
+  useEffect(() => {
+    dispatch(calculateAll());
+  }, [dispatch, products]);
+
   return (
-    <div>
+    <div className="basket__main-wrapper">
       {products.length > 0 ? (
         <>
           <ul className="basket__list">
@@ -28,6 +36,7 @@ function BasketList() {
               <BasketItem key={index} {...product} />
             ))}
           </ul>
+          <span className="basket__total">Общая сумма: {total} ₽ </span>
           <div className="basket__wrapper-button">
             <Button className="basket__button" onClick={handleClearAllClick}>
               Очистить всё
