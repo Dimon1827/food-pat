@@ -2,16 +2,22 @@ import { useState } from 'react';
 import './Slider.scss';
 
 function Slider() {
+  // Позития слайдера 
   const [sliderPosition, setSliderPosition] = useState(42);
+  // Состояние, указывающее на перетаскивание мыши
   const [isDragging, setIsDragging] = useState(false);
 
   const handleMove = (event) => {
+    // Если false, сразу функция завершается
     if (!isDragging) return;
-
+    
+    //Для получения координат компонента (слайдера)
     const rect = event.currentTarget.getBoundingClientRect();
-
+    
+    //Поиск координат x, здесь мы благодаря clientX узнаем координаты по x, куда пользователь повел мышью и от нее отняли кооординату левой части слайдера
     const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
-    console.log('x' + x)
+    
+    //Здесь перевели значение координаты x в проценты
     const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
 
     setSliderPosition(percent);

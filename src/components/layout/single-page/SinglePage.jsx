@@ -3,7 +3,9 @@ import { useDispatch } from 'react-redux';
 import { addProduct } from '../../../redux/slice/productsSlice';
 import productsData from '../../screens/goods/catalog/productsData';
 import goodsWithDiscount from '../../screens/goods/additional-products/goodsWithDiscount';
+import productWithQuantity from '../../../utils/productWithQuantity';
 import './SinglePage.scss';
+
 function SinglePage() {
   const { stringName } = useParams();
   const dispatch = useDispatch();
@@ -15,8 +17,8 @@ function SinglePage() {
     product || productWithDiscount;
 
   const handleAddProductClick = () => {
-    const product = { id, name, price, image, isChecked: false };
-    dispatch(addProduct(product));
+    const product = { id, name, price, image };
+    dispatch(addProduct(productWithQuantity(product)));
   };
 
   return (

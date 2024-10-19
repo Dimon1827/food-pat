@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { addProduct } from '../../../../../redux/slice/productsSlice';
+import { addProduct, calculateAll } from '../../../../../redux/slice/productsSlice';
 import productWithQuantity from '../../../../../utils/productWithQuantity';
 
 function ProductCardInformation({
@@ -15,7 +15,8 @@ function ProductCardInformation({
 
   const handleAddProductClick = () => {
     const product = { id, name, price, image, oldPrice };
-    dispatch(addProduct(productWithQuantity(product)));
+    dispatch(addProduct(productWithQuantity(product)), );
+    dispatch(calculateAll());
   };
   return (
     <div className="product-card__wrapper">

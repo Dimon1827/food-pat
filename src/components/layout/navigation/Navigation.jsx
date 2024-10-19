@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './Navigation.scss';
 import data from './navigation-data';
 import NavigationItem from './navigation-item/NavigationItem';
+import './Navigation.scss';
 
-function Navigation({isHome}) {
+function Navigation({ isHome }) {
   const [isClose, setIsClose] = useState(true);
 
   const handleToggleClick = () => {
@@ -25,7 +25,7 @@ function Navigation({isHome}) {
       <ul className="navigation__list">
         {data.map((item, index) => {
           return (
-            <NavigationItem isHome={isHome} key={index} to={item.to}>
+            <NavigationItem key={index} isHome={isHome} {...item}>
               {item.name}
             </NavigationItem>
           );

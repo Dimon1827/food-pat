@@ -6,10 +6,8 @@ import {
   incrementQuantity,
   decrementQuantity,
 } from '../../../redux/slice/productsSlice';
-import { useState } from 'react';
 
 function BasketItem({ image, name, price, id, isChecked, quantity, oldPrice }) {
-  console.log(oldPrice);
   const dispatch = useDispatch();
 
   const handleDeleteProductClick = () => {

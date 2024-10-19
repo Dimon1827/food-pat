@@ -14,6 +14,7 @@ const items = [
   {
     name: 'Корзина',
     to: '/basket',
+    last: true,
   },
 ];
 
