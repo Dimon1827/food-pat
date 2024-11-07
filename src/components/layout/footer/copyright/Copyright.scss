@@ -1,11 +1,15 @@
-@import 'src/assets/styles/variables';
+@import 'assets/styles/variables';
 
 .copyright {
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   color: $primary-color;
   fill: $primary-color;
   text-decoration: none;
