@@ -11,3 +11,4 @@
 -	JavaScript / TypeScript
 -	React(React Router, React Hook Form, React-Icons)
 - Redux (Redux Toolkit, Redux-persist)
+- Webpack
