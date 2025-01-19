@@ -1,4 +1,4 @@
-import { IProducts } from "redux/slice/productsSlice.types";
+import { IProducts } from "@/redux/slice/productsSlice.types";
 
 interface IproductWithQuantity extends Omit<IProducts, 'isChecked' | 'quantity'> {};
 

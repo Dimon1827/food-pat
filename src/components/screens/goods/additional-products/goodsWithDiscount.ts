@@ -1,5 +1,5 @@
-import { IProductWithDiscounts } from "types";
-import generateUUID from "utils/generateUUID";
+import { IProductWithDiscounts } from "@/types";
+import generateUUID from "@/utils/generateUUID";
 
 const goodsWithDiscount: IProductWithDiscounts[] = [
   {
@@ -15,7 +15,7 @@ const goodsWithDiscount: IProductWithDiscounts[] = [
       hours: 11,
       minutes: 18,
     },
-    image: '/day-item/day-item-1',
+    image: './assets/images/day-item-1',
   },
   {
     id: generateUUID(),
@@ -30,7 +30,7 @@ const goodsWithDiscount: IProductWithDiscounts[] = [
       hours: 12,
       minutes: 30,
     },
-    image: '/day-item/day-item-2',
+    image: './assets/images/day-item-2',
   },
   {
     id: generateUUID(),
@@ -45,7 +45,7 @@ const goodsWithDiscount: IProductWithDiscounts[] = [
       hours: 18,
       minutes: 14,
     },
-    image: '/day-item/day-item-3',
+    image: './assets/images/day-item-3',
   },
   {
     id: generateUUID(),
@@ -60,7 +60,7 @@ const goodsWithDiscount: IProductWithDiscounts[] = [
       hours: 14,
       minutes: 17,
     },
-    image: '/day-item/day-item-4',
+    image: './assets/images/day-item-4',
   },
 ];
 

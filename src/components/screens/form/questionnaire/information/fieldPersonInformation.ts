@@ -1,4 +1,4 @@
-import { IcontactsData } from "types";
+import { IcontactsData } from "@/types";
 
 const fieldPersonInformation: IcontactsData[] = [
   {

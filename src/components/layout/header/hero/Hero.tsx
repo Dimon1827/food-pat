@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import Button from 'components/ui/button/Button';
+import Button from '@/components/ui/button/Button';
 import './Hero.scss';
 
 function Hero() {
@@ -15,8 +15,8 @@ function Hero() {
               type="image/webp"
               media="(min-width:1280px)"
               srcSet="
-                    ./hero-desktop@1x.webp,
-                    ./hero-desktop@2x.webp 2x
+                    ./assets/images/hero-desktop@1x.webp,
+                    ./assets/images/hero-desktop@2x.webp 2x
                   "
               width="552"
               height="499"
@@ -25,8 +25,8 @@ function Hero() {
               type="image/webp"
               media="(min-width:768px)"
               srcSet="
-                    ./hero-tablet@1x.webp,
-                    ./hero-tablet@2x.webp 2x
+                    ./assets/images/hero-tablet@1x.webp,
+                    ./assets/images/hero-tablet@2x.webp 2x
                   "
               width="300"
               height="300"
@@ -34,8 +34,8 @@ function Hero() {
             <source
               type="image/webp"
               srcSet="
-                    ./hero-mobile@1x.webp,
-                    ./hero-mobile@2x.webp 2x
+                    ./assets/images/hero-mobile@1x.webp,
+                    ./assets/images/hero-mobile@2x.webp 2x
                   "
               width="280"
               height="270"
@@ -44,8 +44,8 @@ function Hero() {
               type="image/png"
               media="(min-width:1280px)"
               srcSet="
-                    ./hero-desktop@1x.png,
-                    ./hero-desktop@2x.png 2x
+                    ./assets/images/hero-desktop@1x.png,
+                    ./assets/images/hero-desktop@2x.png 2x
                   "
               width="552"
               height="499"
@@ -54,15 +54,15 @@ function Hero() {
               type="image/png"
               media="(min-width:768px)"
               srcSet="
-                    ./hero-tablet@1x.png,
-                    ./hero-tablet@2x.png 2x
+                    ./assets/images/hero-tablet@1x.png,
+                    ./assets/images/hero-tablet@2x.png 2x
                   "
               width="300"
               height="300"
             />
             <img
-              src="./hero-mobile@1x.png"
-              srcSet="./hero-mobile@2x.png 2x"
+              src="./assets/images/hero-mobile@1x.png"
+              srcSet="./assets/images/hero-mobile@2x.png 2x"
               width="280"
               height="270"
               alt="Супергерой"

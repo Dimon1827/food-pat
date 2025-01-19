@@ -45,39 +45,39 @@ function Slider() {
             <source
               type="image/webp"
               media="(min-width:1280px)"
-              srcSet="./woman-before-tablet.webp"
+              srcSet="./assets/images/woman-before-tablet.webp"
               width="584"
               height="737"
             />
             <source
               type="image/webp"
               media="(min-width:768px)"
-              srcSet="./woman-before-tablet.webp"
+              srcSet="./assets/images/woman-before-tablet.webp"
               width="584"
               height="737"
             />
             <source
               type="image/webp"
-              srcSet="./woman-before-mobile.webp"
+              srcSet="./assets/images/woman-before-mobile.webp"
               width="312"
               height="480"
             />
             <source
               type="image/png"
               media="(min-width:1280px)"
-              srcSet="./woman-before-tablet.png"
+              srcSet="./assets/images/woman-before-tablet.png"
               width="584"
               height="737"
             />
             <source
               type="image/png"
               media="(min-width:768px)"
-              srcSet="./woman-before-tablet.png"
+              srcSet="./assets/images/woman-before-tablet.png"
               width="584"
               height="737"
             />
             <img
-              src="./woman-before-mobile.png"
+              src="./assets/images/woman-before-mobile.png"
               alt="Женщина до"
               className="example__image"
               width="312"
@@ -103,39 +103,39 @@ function Slider() {
             <source
               type="image/webp"
               media="(min-width:1280px)"
-              srcSet="./woman-after-tablet.webp"
+              srcSet="./assets/images/woman-after-tablet.webp"
               width="584"
               height="737"
             />
             <source
               type="image/webp"
               media="(min-width:768px)"
-              srcSet="./woman-after-tablet.webp"
+              srcSet="./assets/images/woman-after-tablet.webp"
               width="584"
               height="737"
             />
             <source
               type="image/webp"
-              srcSet="./woman-after-mobile.webp"
+              srcSet="./assets/images/woman-after-mobile.webp"
               width="312"
               height="480"
             />
             <source
               type="image/png"
               media="(min-width:1280px)"
-              srcSet="./woman-after-tablet.png"
+              srcSet="./assets/images/woman-after-tablet.png"
               width="584"
               height="737"
             />
             <source
               type="image/png"
               media="(min-width:768px)"
-              srcSet="./woman-after-tablet.png"
+              srcSet="./assets/images/woman-after-tablet.png"
               width="584"
               height="737"
             />
             <img
-              src="./woman-after-mobile.png"
+              src="./assets/images/woman-after-mobile.png"
               alt="Женщина до"
               draggable={false}
               className="example__image"

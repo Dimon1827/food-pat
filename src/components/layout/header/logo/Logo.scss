@@ -1,0 +1,11 @@
+@import '@/assets/styles/variables';
+
+.main-logo {
+  width: 100px;
+  height: 60px;
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+    height: 70px;
+  }
+}

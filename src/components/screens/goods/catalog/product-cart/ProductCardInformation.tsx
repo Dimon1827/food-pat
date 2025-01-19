@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { addProduct, calculateAll } from '../../../../../redux/slice/productsSlice';
-import { IProduct } from 'types';
-import { useAppDispatch } from '../../../../../redux/store';
-import productWithQuantity from '../../../../../utils/productWithQuantity';
+import { addProduct, calculateAll } from '@/redux/slice/productsSlice';
+import { IProduct } from '@/types';
+import { useAppDispatch } from '@/redux/store';
+import productWithQuantity from '@/utils/productWithQuantity';
 
 
 

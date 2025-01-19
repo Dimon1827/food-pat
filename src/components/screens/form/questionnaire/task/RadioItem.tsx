@@ -1,5 +1,5 @@
-import { ICheckBoxItem } from 'types';
-import SelectInput from '../../../../ui/selectInput/SelectInput';
+import { ICheckBoxItem } from '@/types';
+import SelectInput from '@/components/ui/selectInput/SelectInput';
 
 function RadioItem({ id, name, type }: ICheckBoxItem) {
   return (

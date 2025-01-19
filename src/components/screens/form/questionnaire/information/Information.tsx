@@ -1,6 +1,6 @@
 import InformationItem from './InformationItem';
 import './Information.scss';
-import { IcontactsData } from 'types';
+import { IcontactsData } from '@/types';
 
 interface InformationProps {
   fieldPersonInformation?: IcontactsData[];

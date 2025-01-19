@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IProductWithDiscounts } from 'types';
+import { IProductWithDiscounts } from '@/types';
 import ProductCardInformation from './ProductCardInformation';
 import TaimerList from './taimer/TaimerList';
 import './ProductCard.scss';

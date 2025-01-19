@@ -61,7 +61,7 @@ function Map() {
         <img
           src="images/location-mobile@1x.png"
           srcSet="images/location-mobile@2x.png 2x"
-          alt="Местоположение офиса"
+          alt=""
           className="map__image"
           width="320"
           height="362"

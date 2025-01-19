@@ -1,4 +1,4 @@
-import { ICheckBoxItem } from 'types';
+import { ICheckBoxItem } from '@/types';
 
 const checkBoxItems: ICheckBoxItem[] = [
   {

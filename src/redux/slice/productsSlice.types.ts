@@ -1,4 +1,4 @@
-import { IProduct } from 'types';
+import { IProduct } from '@/types';
 
 export interface IProducts
   extends Omit<IProduct, 'ingredients' | 'description'> {

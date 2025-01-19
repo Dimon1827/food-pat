@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form';
 import './Input.scss';
-import { InputProps } from 'types';
+import { InputProps } from '@/types';
 
 function Input({
   className,

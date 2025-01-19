@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { IProduct, IProductWithDiscounts } from 'types';
-import { addProduct } from '../../../redux/slice/productsSlice';
-import productsData from '../../screens/goods/catalog/productsData';
-import goodsWithDiscount from '../../screens/goods/additional-products/goodsWithDiscount';
-import productWithQuantity from '../../../utils/productWithQuantity';
+import { IProduct, IProductWithDiscounts } from '@/types';
+import { addProduct } from '@/redux/slice/productsSlice';
+import productsData from '@/components/screens/goods/catalog/productsData';
+import goodsWithDiscount from '@/components/screens/goods/additional-products/goodsWithDiscount';
+import productWithQuantity from '@/utils/productWithQuantity';
 import './SinglePage.scss';
 
 function SinglePage() {
@@ -19,7 +19,7 @@ function SinglePage() {
 
   const { id, name, ingredients, price, oldPrice, image, description } =
     product || productWithDiscount;
-
+  console.log(product);
   const handleAddProductClick = () => {
     const product = { id, name, price, image };
     dispatch(addProduct(productWithQuantity(product)));

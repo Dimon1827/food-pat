@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { INavigationItem } from '../navigation.types';
-import { selectTotalQuantity } from '../../../../redux/products-selectors';
+import { selectTotalQuantity } from '@/redux/products-selectors';
 
 function NavigationItem({ to, children, isHome, last }: INavigationItem) {
   const totalQuantity = useSelector(selectTotalQuantity);

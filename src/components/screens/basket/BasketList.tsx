@@ -3,15 +3,15 @@ import {
   clearAll,
   deleteSelectedProducts,
   calculateAll,
-} from '../../../redux/slice/productsSlice';
+} from '@/redux/slice/productsSlice';
 import BasketItem from './BasketItem';
 import Button from '../../ui/button/Button';
 import { useEffect } from 'react';
 import {
   selectProducts,
   selectTotalPrice,
-} from '../../../redux/products-selectors';
-import { useAppDispatch } from '../../../redux/store';
+} from '@/redux/products-selectors';
+import { useAppDispatch } from '@/redux/store';
 
 function BasketList() {
   const products = useSelector(selectProducts);

@@ -1,5 +1,5 @@
 import { Controller, useFormContext } from 'react-hook-form';
-import { ICheckBoxItem } from 'types';
+import { ICheckBoxItem } from '@/types';
 
 function SelectInput({ id, name, type }: ICheckBoxItem) {
   const { control } = useFormContext();

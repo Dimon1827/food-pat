@@ -1,8 +1,8 @@
 import { BsTelephoneForward } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { useFormContext } from 'react-hook-form';
-import { IcontactsData } from 'types';
-import Input from '../../../../ui/input/Input';
+import { IcontactsData } from '@/types';
+import Input from '@/components/ui/input/Input';
 
 function InformationItem({ input, label }: IcontactsData) {
   const {

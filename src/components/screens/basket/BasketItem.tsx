@@ -5,7 +5,7 @@ import {
   toggleProduct,
   incrementQuantity,
   decrementQuantity,
-} from '../../../redux/slice/productsSlice';
+} from '@/redux/slice/productsSlice';
 import { IBasketItem } from './basket.types';
 
 
