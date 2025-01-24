@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { INavigationItem } from '../navigation.types';
 import { selectTotalQuantity } from '@/redux/products-selectors';
+import { Badge, IconButton } from '@mui/material';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 function NavigationItem({ to, children, isHome, last }: INavigationItem) {
   const totalQuantity = useSelector(selectTotalQuantity);
@@ -18,18 +20,26 @@ function NavigationItem({ to, children, isHome, last }: INavigationItem) {
         {children}
       </NavLink>
       {!!last && (
-        <div className="navigation__link navigation__link--basket">
-          <span
-            className={`navigation__quantity ${
-              !!isHome ? '' : 'navigation__quantity--secondary'
-            }`}
+        <div className="navigation__badge">
+          <Badge
+            badgeContent={totalQuantity}
+            sx={{
+              '& .MuiBadge-badge': {
+                color: 'white',
+                backgroundColor: 'orange',
+              },
+              '& .MuiSvgIcon-root': {
+                color: 'grey',
+              },
+            }}
           >
-            {totalQuantity}
-          </span>
+            <ShoppingBasketIcon />
+          </Badge>
         </div>
       )}
     </li>
   );
 }
+
 
 export default NavigationItem;

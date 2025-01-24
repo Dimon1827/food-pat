@@ -6,15 +6,20 @@ import contactsData from './information/contactsData';
 import Commentary from './commentary/Commentary';
 import Additionally from './additionally/Additionally';
 import './Questionnaire.scss';
+import { Alert, Snackbar } from '@mui/material';
+import { useState } from 'react';
 
 function Questionnaire() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   const methods = useForm({
     mode: 'onChange' 
   });
 
   const onSubmit = (data:any) => {
     console.log(data);
-    alert(`Твои данные успешно получены`);
+    setIsOpen(true);
   };
 
   return (
@@ -52,6 +57,11 @@ function Questionnaire() {
           <Additionally />
         </form>
       </FormProvider>
+      <Snackbar open={isOpen} autoHideDuration={4000} onClose={() => setIsOpen(false)}>
+        <Alert severity="success" variant="filled">
+          Твои данные успешно отправлены
+        </Alert>
+      </Snackbar>
     </section>
   );
 }
