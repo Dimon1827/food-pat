@@ -11,4 +11,5 @@
 -	JavaScript / TypeScript
 -	React(React Router, React Hook Form, React-Icons), Material UI
 - Redux (Redux Toolkit, Redux-persist)
+- Jest, Testing Library
 - Webpack
