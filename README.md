@@ -9,6 +9,6 @@
 -	HTML
 -	CSS (SCSS)
 -	JavaScript / TypeScript
--	React(React Router, React Hook Form, React-Icons)
+-	React(React Router, React Hook Form, React-Icons), Material UI
 - Redux (Redux Toolkit, Redux-persist)
 - Webpack
