@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map Map renders correctly 1`] = `
+<section
+  class="map"
+  data-testid="map"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="visually-hidden"
+    >
+      Контакты
+    </h2>
+    <div
+      class="map__contacts map-contacts"
+      data-testid="contacts"
+    >
+      <p
+        class="map-contacts__text"
+      >
+        Наш центр можете отыскать по этому адресу
+      </p>
+      <div
+        class="map-contacts__info"
+      >
+        <address
+          class="map-contacts__address"
+        >
+          улица Багратионосовкая, д. 5
+        </address>
+        <address
+          class="map-contacts__address"
+        >
+          Москва
+        </address>
+      </div>
+    </div>
+  </div>
+  <picture>
+    <source
+      height="400"
+      media="(min-width:1280px)"
+      srcset="
+                images/location-desktop@1x.webp,
+                images/location-desktop@2x.webp 2x
+              "
+      type="image/webp"
+      width="1440"
+    />
+    <source
+      height="400"
+      media="(min-width:768px)"
+      srcset="
+                images/location-tablet@1x.webp,
+                images/location-tablet@2x.webp 2x
+              "
+      type="image/webp"
+      width="768"
+    />
+    <source
+      height="362"
+      srcset="
+                images/location-mobile@1x.webp,
+                images/location-mobile@2x.webp 2x
+              "
+      type="image/webp"
+      width="320"
+    />
+    <source
+      height="400"
+      media="(min-width:1280px)"
+      srcset="
+                images/location-desktop@1x.png,
+                images/location-desktop@2x.png 2x
+              "
+      type="image/png"
+      width="1440"
+    />
+    <source
+      height="400"
+      media="(min-width:768px)"
+      srcset="
+                images/location-tablet@1x.png,
+                images/location-tablet@2x.png 2x
+              "
+      type="image/png"
+      width="768"
+    />
+    <img
+      alt=""
+      class="map__image"
+      height="362"
+      src="images/location-mobile@1x.png"
+      srcset="images/location-mobile@2x.png 2x"
+      width="320"
+    />
+  </picture>
+  <iframe
+    allowfullscreen=""
+    class="map__interactive-location"
+    height="560"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1888.5454630863453!2d37.50522796070521!3d55.74336458360478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5495835c03ae5%3A0x6d69a3b0825233a5!2sSky%20Karting!5e0!3m2!1sru!2sru!4v1723552429572!5m2!1sru!2sru"
+    style="border: 0px;"
+    title="Офис компании по адресу ул. Большая Конюшенная, д.19/8, Санкт-Петербург"
+  />
+</section>
+`;

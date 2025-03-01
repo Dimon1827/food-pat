@@ -5,7 +5,7 @@ import './Hero.scss';
 function Hero() {
   const navigate = useNavigate();
   return (
-    <section className="hero">
+    <section className="hero" data-testid = "Hero">
       <div className="container">
         <div className="hero__wrapper">
           <h1 className="hero__title title">Магазин здорового питания</h1>

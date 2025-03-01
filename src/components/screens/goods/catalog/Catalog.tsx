@@ -4,7 +4,7 @@ import './Catalog.scss';
 
 function Catalog() {
   return (
-    <section className="catalog">
+    <section className="catalog" data-testid="catalog">
       <div className="container">
         <h1 className="catalog__title title line">Каталог продукции</h1>
         <div className="catalog__container">

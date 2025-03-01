@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tasks Tasks renders correctly as radio list 1`] = `
+<fieldset
+  class="questionnaire__field task"
+>
+  <legend
+    class="visually-hidden"
+  >
+    Основная задача
+  </legend>
+  <ul
+    class="task__list line"
+  >
+    <li
+      class="task__item"
+    >
+      <input
+        class="visually-hidden control-input task__input"
+        id="slimming"
+        name="task"
+        type="radio"
+        value="slimming"
+      />
+      <label
+        class="label task__label"
+        for="slimming"
+      >
+        Похудение
+      </label>
+    </li>
+    <li
+      class="task__item"
+    >
+      <input
+        class="visually-hidden control-input task__input"
+        id="gain"
+        name="task"
+        type="radio"
+        value="gain"
+      />
+      <label
+        class="label task__label"
+        for="gain"
+      >
+        Набор массы
+      </label>
+    </li>
+    <li
+      class="task__item"
+    >
+      <input
+        class="visually-hidden control-input task__input"
+        id="fit"
+        name="task"
+        type="radio"
+        value="fit"
+      />
+      <label
+        class="label task__label"
+        for="fit"
+      >
+        Поддержка формы
+      </label>
+    </li>
+  </ul>
+</fieldset>
+`;

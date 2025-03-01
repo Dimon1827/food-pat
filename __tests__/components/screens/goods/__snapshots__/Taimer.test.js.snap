@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaimerList TaimerList renders correctly 1`] = `
+<ul
+  class="additional-products__list"
+>
+  <li
+    class="additional-products__item"
+  >
+    <span
+      class="additional-products__number"
+    >
+      3
+    </span>
+    <p
+      class="additional-products__text"
+    >
+      дня
+    </p>
+  </li>
+  <li
+    class="additional-products__item"
+  >
+    <span
+      class="additional-products__number"
+    >
+      11
+    </span>
+    <p
+      class="additional-products__text"
+    >
+      часов
+    </p>
+  </li>
+  <li
+    class="additional-products__item"
+  >
+    <span
+      class="additional-products__number"
+    >
+      18
+    </span>
+    <p
+      class="additional-products__text"
+    >
+      минут
+    </p>
+  </li>
+</ul>
+`;

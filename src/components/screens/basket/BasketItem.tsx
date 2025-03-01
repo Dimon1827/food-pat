@@ -1,4 +1,3 @@
-import { useDispatch } from 'react-redux';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import {
   deleteProduct,
@@ -7,6 +6,7 @@ import {
   decrementQuantity,
 } from '@/redux/slice/productsSlice';
 import { IBasketItem } from './basket.types';
+import { useAppDispatch } from '@/redux/store';
 
 
 
@@ -19,7 +19,7 @@ function BasketItem({
   quantity,
   oldPrice,
 }: IBasketItem) {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleDeleteProductClick = () => {
     dispatch(deleteProduct(id));
@@ -41,6 +41,7 @@ function BasketItem({
       <div
         className={`basket__toggle ${isChecked ? 'basket__checked' : ''}`}
         onClick={handleCheckedClick}
+        data-testid="toggle-button"
       ></div>
       <img
         className="basket__image"
@@ -51,6 +52,7 @@ function BasketItem({
         <h2 className="basket__subtitle">{name}</h2>
         <span className="basket__price">{price} ₽</span>
         <RiDeleteBin6Line
+          data-testid="delete-button"
           className="basket__dustbin"
           onClick={handleDeleteProductClick}
         />
@@ -58,6 +60,7 @@ function BasketItem({
           <button
             className="basket__decrement"
             onClick={handleDecrementCountClick}
+            data-testid="button-decrement"
           >
             <svg viewBox="0 0 24 24">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -67,6 +70,7 @@ function BasketItem({
           <button
             className="basket__increment"
             onClick={handleIncrementCountClick}
+            data-testid="button-increment"
           >
             <svg viewBox="0 0 24 24">
               <line x1="12" y1="5" x2="12" y2="19"></line>

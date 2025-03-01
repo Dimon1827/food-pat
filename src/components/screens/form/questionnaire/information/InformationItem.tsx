@@ -10,7 +10,7 @@ function InformationItem({ input, label }: IcontactsData) {
   } = useFormContext();
   return (
     <>
-      <div className="information__inner">
+      <div className="information__inner" data-testid="information-item">
         <label htmlFor={label.htmlFor} className="information__label label">
           {label.name}
         </label>
@@ -27,10 +27,16 @@ function InformationItem({ input, label }: IcontactsData) {
           numberMessage={input.numberMessage}
         />
         {input.type === 'email' && (
-          <AiOutlineMail className="information__icon" />
+          <AiOutlineMail
+            className="information__icon"
+            data-testid="email"
+          />
         )}
         {input.type === 'tel' && (
-          <BsTelephoneForward className="information__icon" />
+          <BsTelephoneForward
+            className="information__icon"
+            data-testid="telephone"
+          />
         )}
       </div>
       {errors[input.name]?.message && (

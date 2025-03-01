@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider Slider renders correctly 1`] = `
+<div
+  class="slider"
+  data-testid="slider"
+>
+  <div
+    class="example__slider-images slider__images"
+    data-testid="slider-images"
+  >
+    <div
+      class="slider__image-wrapper slider__image-wrapper--before"
+      style="clip-path: inset(0 58% 0 0);"
+    >
+      <picture>
+        <source
+          height="737"
+          media="(min-width:1280px)"
+          srcset="./assets/images/woman-before-tablet.webp"
+          type="image/webp"
+          width="584"
+        />
+        <source
+          height="737"
+          media="(min-width:768px)"
+          srcset="./assets/images/woman-before-tablet.webp"
+          type="image/webp"
+          width="584"
+        />
+        <source
+          height="480"
+          srcset="./assets/images/woman-before-mobile.webp"
+          type="image/webp"
+          width="312"
+        />
+        <source
+          height="737"
+          media="(min-width:1280px)"
+          srcset="./assets/images/woman-before-tablet.png"
+          type="image/png"
+          width="584"
+        />
+        <source
+          height="737"
+          media="(min-width:768px)"
+          srcset="./assets/images/woman-before-tablet.png"
+          type="image/png"
+          width="584"
+        />
+        <img
+          alt="Женщина до"
+          class="example__image"
+          draggable="false"
+          height="480"
+          src="./assets/images/woman-before-mobile.png"
+          width="312"
+        />
+      </picture>
+    </div>
+    <button
+      class="example__button"
+      style="left: calc(42% - 12px);"
+      type="button"
+    >
+      <span
+        class="example__button-toogle"
+      />
+      <span
+        class="visually-hidden"
+      >
+        Кнопка для изменения пропорций
+      </span>
+    </button>
+    <div
+      class="slider__image-wrapper slider__image-wrapper--after"
+    >
+      <picture>
+        <source
+          height="737"
+          media="(min-width:1280px)"
+          srcset="./assets/images/woman-after-tablet.webp"
+          type="image/webp"
+          width="584"
+        />
+        <source
+          height="737"
+          media="(min-width:768px)"
+          srcset="./assets/images/woman-after-tablet.webp"
+          type="image/webp"
+          width="584"
+        />
+        <source
+          height="480"
+          srcset="./assets/images/woman-after-mobile.webp"
+          type="image/webp"
+          width="312"
+        />
+        <source
+          height="737"
+          media="(min-width:1280px)"
+          srcset="./assets/images/woman-after-tablet.png"
+          type="image/png"
+          width="584"
+        />
+        <source
+          height="737"
+          media="(min-width:768px)"
+          srcset="./assets/images/woman-after-tablet.png"
+          type="image/png"
+          width="584"
+        />
+        <img
+          alt="Женщина до"
+          class="example__image"
+          draggable="false"
+          height="480"
+          src="./assets/images/woman-after-mobile.png"
+          width="312"
+        />
+      </picture>
+    </div>
+  </div>
+</div>
+`;

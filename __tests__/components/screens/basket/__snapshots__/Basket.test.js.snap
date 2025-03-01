@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basket Basket renders correctly 1`] = `
+<main
+  class="main-container"
+>
+  <section
+    class="basket"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="basket__title title"
+      >
+        Корзина
+      </h1>
+      <div
+        class="basket__main-wrapper"
+        data-testid="basket-list"
+      >
+        <ul
+          class="basket__list"
+        >
+          <li
+            class="basket__item"
+          >
+            <div
+              class="basket__toggle "
+              data-testid="toggle-button"
+            />
+            <img
+              alt="Диетическая курица"
+              class="basket__image"
+              src="/assets/images/product-image-3.jpg"
+            />
+            <div
+              class="basket__wrapper"
+            >
+              <h2
+                class="basket__subtitle"
+              >
+                Диетическая курица
+              </h2>
+              <span
+                class="basket__price"
+              >
+                600
+                 ₽
+              </span>
+              <svg
+                class="basket__dustbin"
+                data-testid="delete-button"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"
+                />
+              </svg>
+              <div
+                class="basket__quantity-wrapper"
+              >
+                <button
+                  class="basket__decrement"
+                  data-testid="button-decrement"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <line
+                      x1="5"
+                      x2="19"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="basket__quantity"
+                >
+                  1
+                </div>
+                <button
+                  class="basket__increment"
+                  data-testid="button-increment"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <line
+                      x1="12"
+                      x2="12"
+                      y1="5"
+                      y2="19"
+                    />
+                    <line
+                      x1="5"
+                      x2="19"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li
+            class="basket__item"
+          >
+            <div
+              class="basket__toggle "
+              data-testid="toggle-button"
+            />
+            <img
+              alt="Диетическая курица"
+              class="basket__image"
+              src="/assets/images/product-image-2.jpg"
+            />
+            <div
+              class="basket__wrapper"
+            >
+              <h2
+                class="basket__subtitle"
+              >
+                Диетическая курица
+              </h2>
+              <span
+                class="basket__price"
+              >
+                600
+                 ₽
+              </span>
+              <svg
+                class="basket__dustbin"
+                data-testid="delete-button"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"
+                />
+              </svg>
+              <div
+                class="basket__quantity-wrapper"
+              >
+                <button
+                  class="basket__decrement"
+                  data-testid="button-decrement"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <line
+                      x1="5"
+                      x2="19"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="basket__quantity"
+                >
+                  1
+                </div>
+                <button
+                  class="basket__increment"
+                  data-testid="button-increment"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <line
+                      x1="12"
+                      x2="12"
+                      y1="5"
+                      y2="19"
+                    />
+                    <line
+                      x1="5"
+                      x2="19"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <span
+          class="basket__total"
+        >
+          Общая сумма: 
+          600
+           ₽ 
+        </span>
+        <div
+          class="basket__wrapper-button"
+        >
+          <button
+            class="button basket__button"
+            data-testid="clear-all"
+          >
+            Очистить всё
+          </button>
+          <button
+            class="button basket__button"
+          >
+            Удалить выбранные товары
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;

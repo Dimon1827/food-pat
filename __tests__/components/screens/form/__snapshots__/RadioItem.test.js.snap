@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioItem RadioItem renders correctly as radio 1`] = `
+<li
+  class="task__item"
+>
+  <input
+    class="visually-hidden control-input task__input"
+    id="slimming"
+    name="task"
+    type="radio"
+    value="slimming"
+  />
+  <label
+    class="label task__label"
+    for="slimming"
+  >
+    Похудение
+  </label>
+</li>
+`;

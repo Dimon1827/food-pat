@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stages Stages renders correctly 1`] = `
+<section
+  class="stages"
+  data-testid="stages"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="stages__title title"
+    >
+      Преимущества
+    </h2>
+    <ul
+      class="stages__list"
+    >
+      <li
+        class="stages__item"
+      >
+        <h3
+          class="stages__subtitle"
+        >
+          Качество
+        </h3>
+        <p
+          class="stages__text"
+        >
+          Вкусно, полезно, доступно - здоровое питание для всех
+        </p>
+      </li>
+      <li
+        class="stages__item"
+      >
+        <h3
+          class="stages__subtitle"
+        >
+          Многообразие
+        </h3>
+        <p
+          class="stages__text"
+        >
+          Широкий выбор продуктов для активной и здоровой жизни
+        </p>
+      </li>
+      <li
+        class="stages__item"
+      >
+        <h3
+          class="stages__subtitle"
+        >
+          Цена
+        </h3>
+        <p
+          class="stages__text"
+        >
+          Качество по доступной цене! У нас выгодные цены на качественные продукты
+        </p>
+      </li>
+      <li
+        class="stages__item"
+      >
+        <h3
+          class="stages__subtitle"
+        >
+          Подбор
+        </h3>
+        <p
+          class="stages__text"
+        >
+          Поможем вам составить здоровый рацион и достичь целей
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+`;

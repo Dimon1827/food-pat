@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard ProductCard renders correctly 1`] = `
+<div
+  class="product-card additional-products__card"
+  data-testid="product-card"
+>
+  <a
+    href="/Салат с фруктами"
+  >
+    <picture>
+      <source
+        height="240"
+        srcset="./assets/images/day-item-1.webp"
+        type="image/webp"
+        width="280"
+      />
+      <img
+        alt="Салат с фруктами"
+        class="product-card__image additional-products__image"
+        height="240"
+        src="./assets/images/day-item-1.png"
+        width="280"
+      />
+    </picture>
+  </a>
+  <ul
+    class="additional-products__list"
+  >
+    <li
+      class="additional-products__item"
+    >
+      <span
+        class="additional-products__number"
+      >
+        3
+      </span>
+      <p
+        class="additional-products__text"
+      >
+        дня
+      </p>
+    </li>
+    <li
+      class="additional-products__item"
+    >
+      <span
+        class="additional-products__number"
+      >
+        11
+      </span>
+      <p
+        class="additional-products__text"
+      >
+        часов
+      </p>
+    </li>
+    <li
+      class="additional-products__item"
+    >
+      <span
+        class="additional-products__number"
+      >
+        18
+      </span>
+      <p
+        class="additional-products__text"
+      >
+        минут
+      </p>
+    </li>
+  </ul>
+  <div
+    class="product-card__wrapper"
+    data-testid="product-card-information"
+  >
+    <div
+      class="product-card__top-wrapper"
+    >
+      <a
+        class="product-card__link"
+        href="/Салат с фруктами"
+      >
+        <h2
+          class="product-card__subtitle subtitle"
+        >
+          Салат с фруктами
+        </h2>
+      </a>
+      <button
+        class="product-card__button button"
+      >
+        Купить
+      </button>
+    </div>
+    <p
+      class="product-card__text"
+    >
+      Ингредиенты:
+    </p>
+    <p
+      class="product-card__ingredients"
+    >
+      Апельсин, зелень, огурцы, банан
+    </p>
+    <p
+      class="product-card__text"
+    >
+      Цена:
+    </p>
+    <span
+      class="food__definition additional-products__old-price"
+    >
+      500
+       ₽
+    </span>
+    <span
+      class="food__definition food__price"
+    >
+      400
+       ₽
+    </span>
+  </div>
+</div>
+`;

@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
   const isHome = location.pathname === '/';
   return (
-    <header className={`header ${isHome ? 'header--container' : ''}`}>
+    <header className={`header ${isHome ? 'header--container' : ''}`} data-testid="header-container">
       <div className="container">
         <div className="header__wrapper header__wrapper--indent">
           <Logo className='header__logo'/>
@@ -21,3 +21,5 @@ function Header() {
 }
 
 export default Header;
+
+

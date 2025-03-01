@@ -2,7 +2,7 @@ import Questionnaire from "./questionnaire/Questionnaire";
 
 function Form() {
   return (
-    <main className="main-container">
+    <main className="main-container" data-testid="form-container">
       <Questionnaire/>
     </main>
   );

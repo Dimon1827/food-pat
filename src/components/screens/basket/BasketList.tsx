@@ -31,7 +31,7 @@ function BasketList() {
   }, [dispatch, products]);
 
   return (
-    <div className="basket__main-wrapper">
+    <div className="basket__main-wrapper" data-testid ="basket-list">
       {products.length > 0 ? (
         <>
           <ul className="basket__list">
@@ -41,7 +41,7 @@ function BasketList() {
           </ul>
           <span className="basket__total">Общая сумма: {total} ₽ </span>
           <div className="basket__wrapper-button">
-            <Button className="basket__button" onClick={handleClearAllClick}>
+            <Button className="basket__button" onClick={handleClearAllClick} data-testid="clear-all">
               Очистить всё
             </Button>
             <Button

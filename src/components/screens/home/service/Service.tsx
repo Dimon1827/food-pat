@@ -9,7 +9,7 @@ function Service() {
   const navigate = useNavigate();
 
   return (
-    <section className="service">
+    <section className="service" data-testid="service">
       <h2 className="visually-hidden">Услуги</h2>
       <div className="container">
         <ul className="service__list">

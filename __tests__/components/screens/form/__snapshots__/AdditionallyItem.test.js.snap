@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionallyItem AdditionallyItem renders correctly as checkbox 1`] = `
+<li
+  class="additionally__item"
+>
+  <input
+    class="visually-hidden control-input additionally__input"
+    id="milk"
+    name="milk"
+    type="checkbox"
+    value="milk"
+  />
+  <label
+    class="label additionally__label"
+    for="milk"
+  >
+    Молоко
+  </label>
+</li>
+`;

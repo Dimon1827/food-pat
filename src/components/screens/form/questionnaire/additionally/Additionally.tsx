@@ -5,7 +5,10 @@ import './Additionally.scss';
 function Additionally() {
   return (
     <div className="container">
-      <div className="questionnaire__field additionally">
+      <div
+        className="questionnaire__field additionally"
+        data-testid="additionally"
+      >
         <h2 className="additionally__title form-title">Аллергены</h2>
         <ul className="additionally__wrapper">
           {checkBoxItems.length > 0 &&

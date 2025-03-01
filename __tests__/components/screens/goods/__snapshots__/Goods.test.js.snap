@@ -1,0 +1,1011 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Goods Goods renders correctly 1`] = `
+<main
+  class="main-container"
+>
+  <section
+    class="catalog"
+    data-testid="catalog"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="catalog__title title line"
+      >
+        Каталог продукции
+      </h1>
+      <div
+        class="catalog__container"
+      >
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Овощной салат"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-1.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Овощной салат"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-1.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Овощной салат"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Овощной салат
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Помидоры, зелень, перец, баклажаны
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              700
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Картошка с мясом"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-2.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Картошка с мясом"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-2.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Картошка с мясом"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Картошка с мясом
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Картошка, мясо, зелень, горох, морковь
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              900
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Диетическая курица"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-3.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Диетическая курица"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-3.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Диетическая курица"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Диетическая курица
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              мясо курицы, помидоры, лимон
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              600
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Фруктовый салат"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-4.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Фруктовый салат"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-4.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Фруктовый салат"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Фруктовый салат
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Апельсин, банан, киви, черешня
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              500
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Гречка с горбушой"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-5.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Гречка с горбушой"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-5.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Гречка с горбушой"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Гречка с горбушой
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Гречка, горбуша, помидор, зелень, морковь
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              750
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Салат с баклажанами"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-6.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Салат с баклажанами"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-6.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Салат с баклажанами"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Салат с баклажанами
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Помидоры, зелень, картошка, баклажаны
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              800
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card catalog__item"
+          data-testid="product-card"
+        >
+          <a
+            href="/Салат с блинами"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="/assets/images/product-image-7.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Салат с блинами"
+                class="product-card__image "
+                height="240"
+                src="/assets/images/product-image-7.jpg"
+                width="280"
+              />
+            </picture>
+          </a>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Салат с блинами"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Салат с блинами
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Зелень, помидор, блины с мясом
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition food__price"
+            >
+              650
+               ₽
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="additional-products"
+    data-testid="additional-products"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="additional-products__title title"
+      >
+        Сделки дня
+      </h2>
+      <div
+        class="additional-products__wrapper"
+      >
+        <div
+          class="product-card additional-products__card"
+          data-testid="product-card"
+        >
+          <a
+            href="/Салат с фруктами"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="./assets/images/day-item-1.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Салат с фруктами"
+                class="product-card__image additional-products__image"
+                height="240"
+                src="./assets/images/day-item-1.png"
+                width="280"
+              />
+            </picture>
+          </a>
+          <ul
+            class="additional-products__list"
+          >
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                3
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                дня
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                11
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                часов
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                18
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                минут
+              </p>
+            </li>
+          </ul>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Салат с фруктами"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Салат с фруктами
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Апельсин, зелень, огурцы, банан
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition additional-products__old-price"
+            >
+              500
+               ₽
+            </span>
+            <span
+              class="food__definition food__price"
+            >
+              400
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card additional-products__card"
+          data-testid="product-card"
+        >
+          <a
+            href="/Сок из апельсина"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="./assets/images/day-item-2.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Сок из апельсина"
+                class="product-card__image additional-products__image"
+                height="240"
+                src="./assets/images/day-item-2.png"
+                width="280"
+              />
+            </picture>
+          </a>
+          <ul
+            class="additional-products__list"
+          >
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                5
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                дня
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                12
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                часов
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                30
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                минут
+              </p>
+            </li>
+          </ul>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Сок из апельсина"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Сок из апельсина
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Апельсин, грейфрукт
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition additional-products__old-price"
+            >
+              200
+               ₽
+            </span>
+            <span
+              class="food__definition food__price"
+            >
+              120
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card additional-products__card"
+          data-testid="product-card"
+        >
+          <a
+            href="/Салат с лимонным коктелем"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="./assets/images/day-item-3.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Салат с лимонным коктелем"
+                class="product-card__image additional-products__image"
+                height="240"
+                src="./assets/images/day-item-3.png"
+                width="280"
+              />
+            </picture>
+          </a>
+          <ul
+            class="additional-products__list"
+          >
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                6
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                дня
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                18
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                часов
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                14
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                минут
+              </p>
+            </li>
+          </ul>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Салат с лимонным коктелем"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Салат с лимонным коктелем
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Горох, лимон, апельсин
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition additional-products__old-price"
+            >
+              450
+               ₽
+            </span>
+            <span
+              class="food__definition food__price"
+            >
+              350
+               ₽
+            </span>
+          </div>
+        </div>
+        <div
+          class="product-card additional-products__card"
+          data-testid="product-card"
+        >
+          <a
+            href="/Сок из грейфрукта"
+          >
+            <picture>
+              <source
+                height="240"
+                srcset="./assets/images/day-item-4.webp"
+                type="image/webp"
+                width="280"
+              />
+              <img
+                alt="Сок из грейфрукта"
+                class="product-card__image additional-products__image"
+                height="240"
+                src="./assets/images/day-item-4.png"
+                width="280"
+              />
+            </picture>
+          </a>
+          <ul
+            class="additional-products__list"
+          >
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                7
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                дня
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                14
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                часов
+              </p>
+            </li>
+            <li
+              class="additional-products__item"
+            >
+              <span
+                class="additional-products__number"
+              >
+                17
+              </span>
+              <p
+                class="additional-products__text"
+              >
+                минут
+              </p>
+            </li>
+          </ul>
+          <div
+            class="product-card__wrapper"
+            data-testid="product-card-information"
+          >
+            <div
+              class="product-card__top-wrapper"
+            >
+              <a
+                class="product-card__link"
+                href="/Сок из грейфрукта"
+              >
+                <h2
+                  class="product-card__subtitle subtitle"
+                >
+                  Сок из грейфрукта
+                </h2>
+              </a>
+              <button
+                class="product-card__button button"
+              >
+                Купить
+              </button>
+            </div>
+            <p
+              class="product-card__text"
+            >
+              Ингредиенты:
+            </p>
+            <p
+              class="product-card__ingredients"
+            >
+              Грейфрукт, апельсин, банан, яблоко
+            </p>
+            <p
+              class="product-card__text"
+            >
+              Цена:
+            </p>
+            <span
+              class="food__definition additional-products__old-price"
+            >
+              220
+               ₽
+            </span>
+            <span
+              class="food__definition food__price"
+            >
+              140
+               ₽
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;

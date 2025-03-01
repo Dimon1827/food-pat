@@ -3,7 +3,7 @@ import './Map.scss';
 
 function Map() {
   return (
-    <section className="map">
+    <section className="map" data-testid="map">
       <div className="container">
         <h2 className="visually-hidden">Контакты</h2>
         <Contacts />

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Service Service should renders correctly 1`] = `
+<section
+  class="service"
+  data-testid="service"
+>
+  <h2
+    class="visually-hidden"
+  >
+    Услуги
+  </h2>
+  <div
+    class="container"
+  >
+    <ul
+      class="service__list"
+    >
+      <li
+        class="service__item"
+      >
+        <p
+          class="service__description"
+        >
+          Лучшие органические продукты онлайн
+        </p>
+        <button
+          class="service__link"
+        >
+          Купить
+        </button>
+      </li>
+      <li
+        class="service__item"
+      >
+        <p
+          class="service__description"
+        >
+          Приготовьте свой завтрак Здоровый и легкий
+        </p>
+        <button
+          class="service__link"
+        >
+          Купить
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+`;

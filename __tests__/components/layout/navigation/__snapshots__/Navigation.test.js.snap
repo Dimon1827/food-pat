@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Navigation item badge should correctly renders the quantity of orders 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <li
+        class="navigation__item navigation__item--basket"
+      >
+        <a
+          aria-current="page"
+          class="navigation__link navigation__link--new-color active"
+          href="/"
+        />
+        <div
+          class="navigation__badge"
+        >
+          <span
+            class="MuiBadge-root css-1ka20jc-MuiBadge-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="ShoppingBasketIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m17.21 9-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM9 9l3-4.4L15 9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2"
+              />
+            </svg>
+            <span
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular css-2ao5rv-MuiBadge-badge"
+            >
+              4
+            </span>
+          </span>
+        </div>
+      </li>
+    </div>
+  </body>,
+  "container": <div>
+    <li
+      class="navigation__item navigation__item--basket"
+    >
+      <a
+        aria-current="page"
+        class="navigation__link navigation__link--new-color active"
+        href="/"
+      />
+      <div
+        class="navigation__badge"
+      >
+        <span
+          class="MuiBadge-root css-1ka20jc-MuiBadge-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ShoppingBasketIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m17.21 9-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM9 9l3-4.4L15 9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2"
+            />
+          </svg>
+          <span
+            class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular css-2ao5rv-MuiBadge-badge"
+          >
+            4
+          </span>
+        </span>
+      </div>
+    </li>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Navigation Navigation renders correctly 1`] = `
+<nav
+  class="navigation navigation--closed"
+>
+  <button
+    class="navigation__toggle"
+    type="button"
+  >
+    <span
+      class="visually-hidden"
+    >
+      Открыть меню
+    </span>
+  </button>
+  <ul
+    class="navigation__list"
+  >
+    <li
+      class="navigation__item "
+    >
+      <a
+        aria-current="page"
+        class="navigation__link navigation__link--new-color active"
+        href="/"
+      >
+        Главная
+      </a>
+    </li>
+    <li
+      class="navigation__item "
+    >
+      <a
+        class="navigation__link navigation__link--new-color"
+        href="/catalog"
+      >
+        Каталог продукции
+      </a>
+    </li>
+    <li
+      class="navigation__item "
+    >
+      <a
+        class="navigation__link navigation__link--new-color"
+        href="/form"
+      >
+        Подбор программы
+      </a>
+    </li>
+    <li
+      class="navigation__item navigation__item--basket"
+    >
+      <a
+        class="navigation__link navigation__link--new-color"
+        href="/basket"
+      >
+        Корзина
+      </a>
+      <div
+        class="navigation__badge"
+      >
+        <span
+          class="MuiBadge-root css-1ka20jc-MuiBadge-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ShoppingBasketIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m17.21 9-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM9 9l3-4.4L15 9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2"
+            />
+          </svg>
+          <span
+            class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular css-z28gz6-MuiBadge-badge"
+          />
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;

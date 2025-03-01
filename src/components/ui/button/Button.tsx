@@ -7,9 +7,9 @@ interface IButton {
   onClick: () => void;
 }
 
-function Button({ children, className = '', onClick }: IButton) {
+function Button({ children, className = '', onClick, ...props }: IButton) {
   return (
-    <button onClick={onClick} className={`button ${className}`}>
+    <button onClick={onClick} className={`button ${className}`} {...props}>
       {children}
     </button>
   );

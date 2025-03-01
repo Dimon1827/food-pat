@@ -5,3 +5,7 @@ export interface ISocialData {
   href: string;
   component: IconType;
 }
+
+export interface SocialItemProps {
+  socialData: ISocialData[];
+}

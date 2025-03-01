@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Commentary Commentary renders correctly 1`] = `
+<div
+  class="questionnaire__field commentary"
+  data-testid="commentary"
+>
+  <h2
+    class="commentary__title form-title"
+  >
+    Комментарий
+  </h2>
+  <textarea
+    class="commentary__text"
+    cols="30"
+    placeholder="Расскажите о вас. Что предпочитаете и т.д"
+    rows="10"
+  />
+  <span
+    class="commentary__counter"
+  >
+    Осталось букв: 
+    200
+  </span>
+</div>
+`;

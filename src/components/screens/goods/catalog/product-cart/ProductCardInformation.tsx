@@ -4,8 +4,6 @@ import { IProduct } from '@/types';
 import { useAppDispatch } from '@/redux/store';
 import productWithQuantity from '@/utils/productWithQuantity';
 
-
-
 interface IProductCardInformation extends Omit<IProduct, 'description'> {}
 
 function ProductCardInformation({
@@ -24,7 +22,7 @@ function ProductCardInformation({
     dispatch(calculateAll());
   };
   return (
-    <div className="product-card__wrapper">
+    <div className="product-card__wrapper" data-testid = "product-card-information">
       <div className="product-card__top-wrapper">
         <Link className="product-card__link" to={name}>
           <h2 className="product-card__subtitle subtitle">{name}</h2>

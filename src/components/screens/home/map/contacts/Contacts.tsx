@@ -1,6 +1,6 @@
 function Contacts() {
   return (
-    <div className="map__contacts map-contacts">
+    <div className="map__contacts map-contacts" data-testid="contacts">
       <p className="map-contacts__text">
         Наш центр можете отыскать по этому адресу
       </p>

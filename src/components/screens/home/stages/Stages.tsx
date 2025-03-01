@@ -4,7 +4,7 @@ import './Stages.scss';
 
 function Stages() {
   return (
-    <section className="stages">
+    <section className="stages" data-testid="stages">
       <div className="container">
         <h2 className="stages__title title">Преимущества</h2>
         <ul className="stages__list">

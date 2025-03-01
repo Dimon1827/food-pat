@@ -4,7 +4,7 @@ import goodsWithDiscount from './goodsWithDiscount';
 
 function AdditionalProducts() {
   return (
-    <section className="additional-products">
+    <section className="additional-products" data-testid="additional-products">
       <div className="container">
         <h2 className="additional-products__title title">Сделки дня</h2>
         <div className="additional-products__wrapper">

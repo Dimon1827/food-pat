@@ -36,7 +36,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
 
   // options.icon = true позволяет работать с svg именно как с иконками и удобно менять им размеры
 
-
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -45,6 +44,27 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
       'sass-loader',
     ],
   };
+
+  // const babelLoader = {
+  //   test: /\.[jt]sx?$/,
+  //   exclude: /node_modules/,
+  //   use: {
+  //     loader: 'babel-loader',
+  //     options: {
+  //       // эти пресеты необходимо для того, чтобы преобразовать typescript, react файлы в js
+  //       presets: [
+  //         '@babel/preset-env',
+  //         [
+  //           '@babel/preset-react',
+  //           {
+  //             runtime: isDev ? 'automatic' : 'classic',
+  //           },
+  //         ],
+  //         '@babel/preset-typescript',
+  //       ],
+  //     },
+  //   },
+  // };
 
   const esbuildLoader = {
     // Match `.js`, `.jsx`, `.ts` or `.tsx` files
@@ -57,7 +77,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     },
   };
 
-
   return [
     // Порядок важен
     assetLoader,
@@ -66,7 +85,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     svgrLoader,
   ];
 }
-
 
 // localIdentName - позволяет указать свое название класса, в данном случае прописан путь до файла
 

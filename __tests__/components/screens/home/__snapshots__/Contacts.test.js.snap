@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contacts Contacts renders correctly 1`] = `
+<div
+  class="map__contacts map-contacts"
+  data-testid="contacts"
+>
+  <p
+    class="map-contacts__text"
+  >
+    Наш центр можете отыскать по этому адресу
+  </p>
+  <div
+    class="map-contacts__info"
+  >
+    <address
+      class="map-contacts__address"
+    >
+      улица Багратионосовкая, д. 5
+    </address>
+    <address
+      class="map-contacts__address"
+    >
+      Москва
+    </address>
+  </div>
+</div>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCardInformation ProductCardInformation renders correctly 1`] = `
+<div
+  class="product-card__wrapper"
+  data-testid="product-card-information"
+>
+  <div
+    class="product-card__top-wrapper"
+  >
+    <a
+      class="product-card__link"
+      href="/Сок из апельсина"
+    >
+      <h2
+        class="product-card__subtitle subtitle"
+      >
+        Сок из апельсина
+      </h2>
+    </a>
+    <button
+      class="product-card__button button"
+    >
+      Купить
+    </button>
+  </div>
+  <p
+    class="product-card__text"
+  >
+    Ингредиенты:
+  </p>
+  <p
+    class="product-card__ingredients"
+  >
+    Апельсин, грейфрукт
+  </p>
+  <p
+    class="product-card__text"
+  >
+    Цена:
+  </p>
+  <span
+    class="food__definition additional-products__old-price"
+  >
+    200
+     ₽
+  </span>
+  <span
+    class="food__definition food__price"
+  >
+    120
+     ₽
+  </span>
+</div>
+`;

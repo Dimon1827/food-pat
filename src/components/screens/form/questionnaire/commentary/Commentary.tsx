@@ -17,7 +17,7 @@ function Commentary() {
 
   return (
     <div className="container">
-      <div className="questionnaire__field commentary">
+      <div className="questionnaire__field commentary" data-testid="commentary">
         <h2 className="commentary__title form-title">Комментарий</h2>
         <textarea
           className="commentary__text"

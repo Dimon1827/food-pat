@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Additionally Additionally renders correctly as checkbox 1`] = `
+<div
+  class="questionnaire__field additionally"
+  data-testid="additionally"
+>
+  <h2
+    class="additionally__title form-title"
+  >
+    Аллергены
+  </h2>
+  <ul
+    class="additionally__wrapper"
+  >
+    <li
+      class="additionally__item"
+    >
+      <input
+        class="visually-hidden control-input additionally__input"
+        id="milk"
+        name="milk"
+        type="checkbox"
+        value="milk"
+      />
+      <label
+        class="label additionally__label"
+        for="milk"
+      >
+        Молоко
+      </label>
+    </li>
+    <li
+      class="additionally__item"
+    >
+      <input
+        class="visually-hidden control-input additionally__input"
+        id="fish"
+        name="fish"
+        type="checkbox"
+        value="fish"
+      />
+      <label
+        class="label additionally__label"
+        for="fish"
+      >
+        Рыба
+      </label>
+    </li>
+    <li
+      class="additionally__item"
+    >
+      <input
+        class="visually-hidden control-input additionally__input"
+        id="nuts"
+        name="nuts"
+        type="checkbox"
+        value="nuts"
+      />
+      <label
+        class="label additionally__label"
+        for="nuts"
+      >
+        Орехи
+      </label>
+    </li>
+    <li
+      class="additionally__item"
+    >
+      <input
+        class="visually-hidden control-input additionally__input"
+        id="egg"
+        name="egg"
+        type="checkbox"
+        value="egg"
+      />
+      <label
+        class="label additionally__label"
+        for="egg"
+      >
+        Яйца
+      </label>
+    </li>
+  </ul>
+  <button
+    class="questionnaire__button button"
+    type="submit"
+  >
+    отправить заявку
+  </button>
+  <p
+    class="questionnaire__text"
+  >
+    * — Обязательные поля
+  </p>
+</div>
+`;

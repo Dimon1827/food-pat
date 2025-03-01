@@ -4,6 +4,8 @@ import ProductCardInformation from './ProductCardInformation';
 import TaimerList from './taimer/TaimerList';
 import './ProductCard.scss';
 
+
+
 function ProductCard({
   name,
   ingredients,
@@ -18,6 +20,7 @@ function ProductCard({
       className={`product-card ${
         !!oldPrice ? 'additional-products__card' : 'catalog__item'
       }`}
+      data-testid="product-card"
     >
       <Link to={name}>
         <picture>

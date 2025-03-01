@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Hero renders correctly 1`] = `
+<section
+  class="hero"
+  data-testid="Hero"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="hero__wrapper"
+    >
+      <h1
+        class="hero__title title"
+      >
+        Магазин здорового питания
+      </h1>
+      <p
+        class="hero__text"
+      >
+        Поможем подобрать оптимальную программу
+      </p>
+      <picture>
+        <source
+          height="499"
+          media="(min-width:1280px)"
+          srcset="
+                    ./assets/images/hero-desktop@1x.webp,
+                    ./assets/images/hero-desktop@2x.webp 2x
+                  "
+          type="image/webp"
+          width="552"
+        />
+        <source
+          height="300"
+          media="(min-width:768px)"
+          srcset="
+                    ./assets/images/hero-tablet@1x.webp,
+                    ./assets/images/hero-tablet@2x.webp 2x
+                  "
+          type="image/webp"
+          width="300"
+        />
+        <source
+          height="270"
+          srcset="
+                    ./assets/images/hero-mobile@1x.webp,
+                    ./assets/images/hero-mobile@2x.webp 2x
+                  "
+          type="image/webp"
+          width="280"
+        />
+        <source
+          height="499"
+          media="(min-width:1280px)"
+          srcset="
+                    ./assets/images/hero-desktop@1x.png,
+                    ./assets/images/hero-desktop@2x.png 2x
+                  "
+          type="image/png"
+          width="552"
+        />
+        <source
+          height="300"
+          media="(min-width:768px)"
+          srcset="
+                    ./assets/images/hero-tablet@1x.png,
+                    ./assets/images/hero-tablet@2x.png 2x
+                  "
+          type="image/png"
+          width="300"
+        />
+        <img
+          alt="Супергерой"
+          class="hero__image"
+          height="270"
+          src="./assets/images/hero-mobile@1x.png"
+          srcset="./assets/images/hero-mobile@2x.png 2x"
+          width="280"
+        />
+      </picture>
+      <button
+        class="button hero__button"
+      >
+        подобрать
+      </button>
+    </div>
+  </div>
+</section>
+`;

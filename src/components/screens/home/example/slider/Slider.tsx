@@ -31,11 +31,12 @@ function Slider() {
     setIsDragging(false);
   };
   return (
-    <div className="slider" onMouseUp={handleMouseUp}>
+    <div className="slider" onMouseUp={handleMouseUp} data-testid="slider">
       <div
         className="example__slider-images slider__images"
         onMouseMove={handleMove}
         onMouseDown={handleMouseDown}
+        data-testid = "slider-images"
       >
         <div
           className="slider__image-wrapper slider__image-wrapper--before"

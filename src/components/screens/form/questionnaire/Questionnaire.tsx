@@ -23,9 +23,9 @@ function Questionnaire() {
   };
 
   return (
-    <section className="questionnaire">
+    <section className="questionnaire" data-testid="questionnaire">
       <FormProvider {...methods}>
-        <form className="form" onSubmit={methods.handleSubmit(onSubmit)}>
+        <form className="form" onSubmit={methods.handleSubmit(onSubmit)} data-testid="form">
           <div className="container">
             <div className="questionnaire__wrapper">
               <h1 className="questionnaire__title title">Подбор программы</h1>
@@ -57,7 +57,11 @@ function Questionnaire() {
           <Additionally />
         </form>
       </FormProvider>
-      <Snackbar open={isOpen} autoHideDuration={4000} onClose={() => setIsOpen(false)}>
+      <Snackbar
+        open={isOpen}
+        autoHideDuration={100000}
+        onClose={() => setIsOpen(false)}
+      >
         <Alert severity="success" variant="filled">
           Твои данные успешно отправлены
         </Alert>

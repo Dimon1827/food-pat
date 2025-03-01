@@ -5,6 +5,7 @@ import Forms from './components/screens/form/Form';
 import Catalog from './components/screens/goods/Goods';
 import SinglePage from './components/layout/single-page/SinglePage';
 import Basket from './components/screens/basket/Basket';
+import { useState } from 'react';
 
 function App() {
   return (
